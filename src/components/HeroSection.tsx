@@ -7,9 +7,11 @@ import { buttonVariants } from "@/components/ui/button";
 function HeroSection() {
   return (
     <section>
-      <MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
-        <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
-          <p className="text-sm font-semibold text-gray-700">Read Smart!</p>
+      <MaxWidthWrapper className="flex flex-col items-center justify-center mb-12 text-center mt-28 sm:mt-40">
+        <div className="flex items-center justify-center py-2 mx-auto mb-4 space-x-2 overflow-hidden transition-all bg-white border border-gray-200 rounded-full shadow-md max-w-fit px-7 backdrop-blur hover:border-gray-300 hover:bg-white/50">
+          <p className="text-sm font-semibold text-gray-700">
+            Give your PDFs superpower!
+          </p>
         </div>
         <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
           Chat with your <span className="text-orange-600">documents</span> in
@@ -27,7 +29,7 @@ function HeroSection() {
           })}
           href="/dashboard"
           target="_blank">
-          Get started <ArrowRight className="ml-2 h-5 w-5" />
+          Get started <ArrowRight className="w-5 h-5 ml-2" />
         </Link>
       </MaxWidthWrapper>
     </section>
